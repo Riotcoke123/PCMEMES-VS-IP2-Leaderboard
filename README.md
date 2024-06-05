@@ -30,7 +30,11 @@
     <ul>
         <li><strong>GET /results</strong>: Returns the sorted results in JSON format.</li>
     </ul>
-    <h2>License</h2>
-    <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+<p>This project is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0 License</a>. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+
+
+
+
+
 </body>
 </html>

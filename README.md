@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>PCMEMES VS IP2 Leaderboard</h1>
-    <h1>README</h1>
+    <h1>IP2 README</h1>
     <p>This project fetches data from two different URLs, processes the data, and then serves the results through an API endpoint. It fetches posts from the provided URLs, calculates a score based on each post's vote state and author, and then sorts the results based on the score. The sorted results are then written to an output file named <code>output.json</code>.</p>
     <h2>Dependencies</h2>
     <p>This project uses the following dependencies:</p>
@@ -30,10 +30,34 @@
     <ul>
         <li><strong>GET /results</strong>: Returns the sorted results in JSON format.</li>
     </ul>
+     <h1>PCMEMES.NET READMEr</h1>
+  <p>This is a Python script to scrape the leaderboard data from PCMEMES.NET and save it to a JSON file.</p>
+
+  <h2>Dependencies</h2>
+  <ul>
+    <li>requests</li>
+    <li>BeautifulSoup</li>
+    <li>json</li>
+    <li>time</li>
+    <li>re</li>
+    <li>logging</li>
+  </ul>
+
+  <h2>Usage</h2>
+  <p>To use this script, you need to provide your access token and client ID. Additionally, make sure you have Python installed on your system.</p>
+  <pre><code>python scraper.py</code></pre>
+
+  <h2>Script Explanation</h2>
+  <p>This script scrapes data from the PCMEMES.NET leaderboard for various URLs. It extracts usernames and corresponding upvotes, applies a multiplier, and saves the data to a JSON file.</p>
+
+  <h2>Configuration</h2>
+  <p>You need to set your access token and client ID in the script before running it.</p>
+  
 <p>This project is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0 License</a>. See the <a href="LICENSE">LICENSE</a> file for details.</p>
 
 
-
+<h2>Author</h2>
+  <p>Created by RIOTCOKE</p>
 
 
 </body>

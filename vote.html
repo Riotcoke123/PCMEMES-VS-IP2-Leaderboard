@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCMEMES.NET Leaderboard</title>
+    <title>PCMEMES VS IP2 Leaderboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="https://pcmemes.net/site/sidebar/art/16967534755346372.webp" alt="PC Memes Image" class="center-image">
+    <img src="" alt="" class="center-image">
 
     <h2>PCMEMES.NET Leaderboard</h2>
 
@@ -28,7 +28,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const fetchData = () => {
-                fetch('http://localhost:8000/vote.json')
+                fetch('vote.json')
                     .then(response => response.json())
                     .then(data => {
                         const tbody = document.querySelector('#leaderboard tbody');
@@ -51,6 +51,7 @@
             setInterval(fetchData, 180000); // Fetch data every 3 minutes (180000 ms)
         });
     </script>
+    <img src="" alt="" class="center-image">
 
     <h2>IP2 Leaderboard</h2>
     <table id="leaderboard2" class="container">

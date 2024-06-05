@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README</title>
+
 </head>
 <body>
-  # PCMEMES VS IP2 Leaderboard
-PCMEMES VS IP2 Leaderboard
+<h1>PCMEMES VS IP2 Leaderboard</h1>
     <h1>README</h1>
     <p>This project fetches data from two different URLs, processes the data, and then serves the results through an API endpoint. It fetches posts from the provided URLs, calculates a score based on each post's vote state and author, and then sorts the results based on the score. The sorted results are then written to an output file named <code>output.json</code>.</p>
     <h2>Dependencies</h2>

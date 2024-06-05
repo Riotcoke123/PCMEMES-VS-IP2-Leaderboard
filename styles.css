@@ -1,0 +1,47 @@
+body {
+    background-color: black; /* Change background color to black */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center align text */
+}
+
+table {
+    margin: 0 auto; /* Center align table */
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid white; /* Add white border around the table */
+    background-color: rgb(0, 53, 9); /* Set background color of the table to gray */
+}
+
+th, td {
+    border: 1px solid white; /* Add white border around table cells */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(235, 13, 13); /* Set header background color to purple */
+}
+
+h2 {
+    text-align: center; /* Center align the heading */
+}
+
+thead tr {
+    background-color: rgb(78, 216, 151); /* Set header row background color to purple */
+}
+
+thead th {
+    color: white; /* Set header text color to white */
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px; /* Set width to 250 pixels */
+    height: 250px; /* Set height to 250 pixels */
+}
+
+a {
+    color: white; /* Set link color to white */
+}

@@ -30,7 +30,7 @@
     <ul>
         <li><strong>GET /results</strong>: Returns the sorted results in JSON format.</li>
     </ul>
-     <h1>PCMEMES.NET READMEr</h1>
+     <h1>PCMEMES.NET README</h1>
   <p>This is a Python script to scrape the leaderboard data from PCMEMES.NET and save it to a JSON file.</p>
 
   <h2>Dependencies</h2>

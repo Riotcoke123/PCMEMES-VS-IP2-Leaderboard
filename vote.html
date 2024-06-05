@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCMEMES.NET Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="https://pcmemes.net/site/sidebar/art/16967534755346372.webp" alt="PC Memes Image" class="center-image">
+
+    <h2>PCMEMES.NET Leaderboard</h2>
+
+    <table id="leaderboard" class="container">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Username</th>
+                <th>Score</th>
+                <th>True Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be injected here -->
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fetchData = () => {
+                fetch('http://localhost:8000/vote.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const tbody = document.querySelector('#leaderboard tbody');
+                        tbody.innerHTML = ''; // Clear existing rows
+                        data.forEach(item => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${item.rank}</td>
+                                <td><a href="${item.profile}" target="_blank">${item.username}</a></td>
+                                <td>${item.score}</td>
+                                <td>${item.true_score}</td>
+                            `;
+                            tbody.appendChild(row);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching data:', error));
+            };
+
+            fetchData(); // Fetch data on page load
+            setInterval(fetchData, 180000); // Fetch data every 3 minutes (180000 ms)
+        });
+    </script>
+
+    <h2>IP2 Leaderboard</h2>
+    <table id="leaderboard2" class="container">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Username</th>
+                <th>Score</th>
+                <!-- <th>True Score</th> Removed as it seems not present in your data -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be injected here -->
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fetchData2 = () => {
+                fetch('output.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const tbody = document.querySelector('#leaderboard2 tbody');
+                        tbody.innerHTML = ''; // Clear existing rows
+                        data.forEach(item => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${item.rank}</td>
+                                <td><a href="${item.profile}" target="_blank">${item.username}</a></td>
+                                <td>${item.score}</td>
+                                <!-- <td>${item.true_score}</td> Removed as it seems not present in your data -->
+                            `;
+                            tbody.appendChild(row);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching data:', error));
+            };
+
+            fetchData2(); // Fetch data on page load
+            setInterval(fetchData2, 180000); // Fetch data every 3 minutes (180000 ms)
+        });
+    </script>
+</body>
+</html>
